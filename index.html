@@ -16,15 +16,6 @@
     <meta property="og:url" content="https://www.agappe.com/mispa-cxl-pro">
     <meta property="og:type" content="website">
 
-    <!-- Twitter Cards Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Mispa CXL Pro - AR 3D Model">
-    <meta name="twitter:description" content="View the Mispa CXL Pro in AR, download brochures, and explore features.">
-    <meta name="twitter:image" content="https://www.agappe.com/path-to-your-image.jpg">
-
-    <link type="text/css" href="./styles.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="css/font-icons.css" type="text/css" />
-
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-V1TMNVP8E5"></script>
     <script>
@@ -33,33 +24,14 @@
       gtag('js', new Date());
       gtag('config', 'G-V1TMNVP8E5');
     </script>
-
-    <!-- Google Ads Conversion Tracking -->
-    <script>
-      gtag('config', 'AW-123456789'); // Replace with your Google Ads Conversion ID
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "qq1zz8zek6");
     </script>
-    
-    <!-- Facebook Pixel -->
-    <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;
-      n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '1234567890'); // Replace with your Pixel ID
-      fbq('track', 'PageView');
-    </script>
-
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
 
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
@@ -69,52 +41,67 @@
       "name": "Mispa CXL Pro",
       "image": "https://www.agappe.com/path-to-your-image.jpg",
       "description": "Experience the Mispa CXL Pro in AR. Download brochures and explore features.",
-      "brand": { "@type": "Brand", "name": "Agappe Diagnostics" },
+      "brand": {
+        "@type": "Brand",
+        "name": "Agappe Diagnostics"
+      },
       "url": "https://www.agappe.com/mispa-cxl-pro"
     }
     </script>
+
+    <!-- Google Ads Conversion Tracking -->
+    <script>
+      gtag('config', 'AW-123456789'); // Replace with your Google Ads Conversion ID
+    </script>
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
   </head>
   <body>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
     <div id="card">
       <model-viewer id="model" src="CXL.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="loading.gif" shadow-intensity="0.88" shadow-softness="1" exposure="1">
-         <div class="progress-bar hide" slot="progress-bar">
+        <div class="progress-bar hide" slot="progress-bar">
             <div class="update-bar"></div>
         </div>
         <button slot="ar-button" id="ar-button">View in 4D</button>
-        <div id="button" style="display: flex; justify-content: space-between;">
-            <ul>
-        <li><a href="https://www.agappe.com">Home</a></li>
-        <li><a href="https://www.agappe.com/products">Products</a></li>
-        <li>Mispa CXL Pro</li>
-      </ul>
-        </div>
       </model-viewer>
-      <section class="attributiontwo">
-        <a href="https://www.agappe.com/media/catalog/product/file/Mispa_CXL_Pro.pdf" class="track-button" data-name="Brochure">
-          <img src="Brochure_1.png" alt="Download Mispa CXL Pro Brochure" loading="lazy" />
-        </a>
-        <a href="https://www.agappe.com/in" class="track-button" data-name="Website">
-          <img src="web_1.png" alt="Visit Agappe Official Website" loading="lazy" />
-        </a>
-        <a href="https://www.youtube.com/watch?v=gGXQ2YDdIFY" class="track-button" data-name="Video">
-          <img src="Video_1.png" alt="Watch Mispa CXL Pro Video on YouTube" loading="lazy" />
-        </a>
-        <a href="https://drive.google.com/file/d/1hFf5OK8XdV_q6UZ7WFcwiR3xrxWkUQ4Z/view?usp=sharing">
-          <img src="analytics_1.png" id="youtube-icon" class="icon" />
-        </a>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSew4D56CSKpONvc30Ay7cLUY6FnPCOs7zK9IPYRLQWQPswbsg/viewform?usp=sf_link">
-          <img src="form_1.png" id="youtube-icon" class="icon" />
-        </a>
-    
-      </section>
     </div>
     
-    <script src="script.js"></script>
+    <script>
+      const modelViewer = document.getElementById('model');
+      
+      modelViewer.addEventListener('click', () => {
+        gtag('event', '3D_model_click', {
+          event_category: '3D Interaction',
+          event_label: 'User clicked on 3D model'
+        });
+      });
+      
+      modelViewer.addEventListener('camera-change', () => {
+        gtag('event', '3D_camera_change', {
+          event_category: '3D Interaction',
+          event_label: 'Camera position changed'
+        });
+      });
+      
+      modelViewer.addEventListener('scale-change', () => {
+        gtag('event', '3D_scale_change', {
+          event_category: '3D Interaction',
+          event_label: 'Model scaled by user'
+        });
+      });
+    </script>
+    
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
   </body>
 </html>
+
 <style>
   h5 {
     text-align: center;
