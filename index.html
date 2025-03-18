@@ -120,6 +120,12 @@
           event_label: 'Model scaled by user'
         });
       });
+        modelViewer.addEventListener('rotation-change', () => {
+        gtag('event', '3D_rotation_change', {
+          event_category: '3D Interaction',
+          event_label: 'Model rotate by user'
+        });
+      });
     </script>
     
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
