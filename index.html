@@ -9,7 +9,7 @@
     <meta name="author" content="Agappe Diagnostics">
     <meta name="robots" content="index, follow">
 
-    <!-- Open Graph Meta Tags (for Facebook & LinkedIn) -->
+    <!-- Open Graph Meta Tags (for Social Media) -->
     <meta property="og:title" content="Mispa CXL Pro - AR 3D Model">
     <meta property="og:description" content="View the Mispa CXL Pro in AR, download brochures, and explore features.">
     <meta property="og:image" content="https://www.agappe.com/path-to-your-image.jpg">
@@ -34,14 +34,32 @@
       gtag('config', 'G-V1TMNVP8E5');
     </script>
 
-    <!-- Microsoft Clarity -->
-    <script type="text/javascript">
-      (function(c,l,a,r,i,t,y){
-          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-      })(window, document, "clarity", "script", "qq1zz8zek6");
+    <!-- Google Ads Conversion Tracking -->
+    <script>
+      gtag('config', 'AW-123456789'); // Replace with your Google Ads Conversion ID
     </script>
+    
+    <!-- Facebook Pixel -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1234567890'); // Replace with your Pixel ID
+      fbq('track', 'PageView');
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
 
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
@@ -51,20 +69,17 @@
       "name": "Mispa CXL Pro",
       "image": "https://www.agappe.com/path-to-your-image.jpg",
       "description": "Experience the Mispa CXL Pro in AR. Download brochures and explore features.",
-      "brand": {
-        "@type": "Brand",
-        "name": "Agappe Diagnostics"
-      },
+      "brand": { "@type": "Brand", "name": "Agappe Diagnostics" },
       "url": "https://www.agappe.com/mispa-cxl-pro"
     }
     </script>
   </head>
   <body>
-    <!-- Breadcrumb Navigation -->
-
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
     <div id="card">
       <model-viewer id="model" src="CXL.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="loading.gif" shadow-intensity="0.88" shadow-softness="1" exposure="1">
-        <div class="progress-bar hide" slot="progress-bar">
+         <div class="progress-bar hide" slot="progress-bar">
             <div class="update-bar"></div>
         </div>
         <button slot="ar-button" id="ar-button">View in 4D</button>
@@ -76,7 +91,6 @@
       </ul>
         </div>
       </model-viewer>
-      
       <section class="attributiontwo">
         <a href="https://www.agappe.com/media/catalog/product/file/Mispa_CXL_Pro.pdf" class="track-button" data-name="Brochure">
           <img src="Brochure_1.png" alt="Download Mispa CXL Pro Brochure" loading="lazy" />
@@ -96,13 +110,11 @@
     
       </section>
     </div>
-  
+    
     <script src="script.js"></script>
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
   </body>
 </html>
-
-
 <style>
   h5 {
     text-align: center;
